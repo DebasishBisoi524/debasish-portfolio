@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "SugarMagic";
+    src: url(/fonts/sugarmagicpersonaluseonly-jemyo.otf);
+  }
+  @font-face{
+    font-family: "NIKEA";
+    src: url(/fonts/NIKEA.otf);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  section {
+    font-family: "SugarMagic", sans-serif;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/images/image3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+  
+  }
+  
+  .section-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/images/image2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  .section-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("https://wallpapers.com/images/featured/aesthetic-laptop-pictures-jguxbqlk9pjpbov8.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: 0px 1px;
+  }
+  
+  .section-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("./images/image4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  
+  h2 {
+    font-size: 62px;
+    text-shadow: 2px 2px 2px #000;
+  }
+  
+  
+  ::selection {
+    color: antiquewhite;
+  }
+  
+  .last{
+    position: relative;
+  }
+  
+  .last::before{
+    content: "Projects";
+    position: absolute;
+    color: antiquewhite;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    animation: textreveal 6s linear infinite;
+  }
+  
+  @keyframes textreveal{
+    0%{
+      width: 0;
+    }
+    50%{
+      width: 100%;
+    }
+    100%{
+      width: 0;
+    }
+  }
+  
+  
+  .three h2 a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  .conn-text{
+    padding-top: 22px;
+    font-size: 30px;
+    max-width: 82vw;
+    text-shadow: 2px 2px 2px #000;
+    margin: auto;
+  
+  }
+  
+  .npx-card{
+    color: white;
+    font-family: "NIKEA", sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    font-size: 27px;
+    padding-top: 6px;
+  }
