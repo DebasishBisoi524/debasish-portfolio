@@ -6,33 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
 <body>
     <section class="section-1">
         <div>
-            <h2>Hello My Name Is Debasish Bisoi</h2>
+            <h2 class="animate">Hello My Name Is Debasish Bisoi</h2>
         </div>
     </section>
     <section class="section-2">
         <div class="two">
-            <h2>IM A Developer and A student</h2>
+            <h2 class="animate">IM A Developer and A student</h2>
         </div>
     </section>
     <section class="section-3">
         <div class="three">
-            <h2 class="last"><a href="#">Projects</a></h2>
+            <h2 class="last animate"><a href="#">Projects</a></h2>
         </div>
     </section>
     <section class="section-4">
         <div class="three">
-            <h2><a href="#">Connect With Me</a></h2>
+            <h2 class="animate"><a href="#">Connect With Me</a></h2>
             <p class="conn-text">
                 I am actively seeking new career opportunities and my inbox is always open Whether you have a job
-                opportunity or if you just want to connect 
+                opportunity or if you just want to connect
                 Just Type <span class="npx-card">npx debasish-dev</span> in your terminal with node installed</p>
         </div>
     </section>
+    <script>
+        gsap.from(".animate", { opacity: 0, y: 100, duration: 1, stagger: 0.7 });
+    </script>
 </body>
 
 </html>
